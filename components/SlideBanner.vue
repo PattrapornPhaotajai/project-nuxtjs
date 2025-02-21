@@ -6,54 +6,59 @@
       :modules="[Navigation, Pagination, Autoplay]"
       :slides-per-view="1"
       :loop="true"
-      :autoplay="{ delay: 3000, disableOnInteraction: false }"
+      :autoplay="{ delay: 5000, disableOnInteraction: false }"
       :pagination="{ clickable: true }"
       class="mySwiper"
     >
       <swiper-slide v-for="(slide, index) in slides" :key="index">
-        <img :src="slide.image" :alt="slide.alt" class="w-full h-auto" />
+        <img :src="`/${slide.image}`" :alt="slide.alt" class="w-[100%] h-auto" />
       </swiper-slide>
     </swiper>
 
     <!-- Custom Slide Control Buttons -->
-    <button @click="prevSlide" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded">
-      ◀
-    </button>
-    <button @click="nextSlide" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded">
-      ▶
-    </button>
+   
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
-import "swiper/css";
-import "swiper/css/navigation";
-
-import "swiper/css/pagination";
+import { ref, onMounted } from 'vue'; // ใช้ Vue 3
+import { Swiper, SwiperSlide } from 'swiper/vue'; // ใช้ Swiper และ SwiperSlide สำหรับ Vue 3
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
 
 const slides = [
-  { image: "1.png", alt: "Slide 1" },
-  { image: "2.png", alt: "Slide 2" },
-  { image: "3.png", alt: "Slide 3" },
+  { image: '1.png', alt: 'Slide 1' },
+  { image: '2.png', alt: 'Slide 2' },
+  { image: '3.png', alt: 'Slide 3' },
 ];
 
 const swiperRef = ref(null);
 
-// Custom navigation
+// ฟังก์ชันสำหรับการเปลี่ยนสไลด์
 const nextSlide = () => {
   swiperRef.value.swiper.slideNext();
+  console.log('> slide')
 };
 
 const prevSlide = () => {
   swiperRef.value.swiper.slidePrev();
+  console.log("< slide")
 };
+
+// ตรวจสอบว่า Swiper ถูกสร้างขึ้นมาแล้ว
+onMounted(() => {
+  console.log(swiperRef.value); // สำหรับการดีบัก
+});
 </script>
 
 <style scoped>
 .mySwiper {
-  width: 100%;
+  width: 50%;
   height: 300px;
+}
+
+button {
+  z-index: 10;
 }
 </style>

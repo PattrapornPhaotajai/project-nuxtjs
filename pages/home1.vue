@@ -15,18 +15,11 @@
     
         </div>
         </header>
-        <main class="container mx-auto text-left">
-            <div><p class="text-2xl mt-8 mb-5">จองคิว</p>
-                <div class=" bg-pink-200 rounded-lg w-90% grid grid-cols-1">
-                    
-                </div>
-            
-                    
-
-            </div>
+        <main>
             
         </main>
         <section>
+            
             <div class=" grid grid-cols-4 bg-pink-300 text-2xl mt-4 ">
                 <img src=" /12.png" class="flex items-center h-40 w-40 rounded-full ml-4 p-3 " alt="">
                     <div class=" flex flex-col gap-3 ">
@@ -45,7 +38,7 @@
                     </div>
                     <div>
                         <p class=" ml-4 mt-3">ข่าวสาร</p>
-                        <ul> <li class=" bg-white rounded-lg mt-2 ml-4 mr-6"> > โปรโมชัน 
+                        <ul> <li class=" bg-white rounded-lg mt-2 ml-4"> > โปรโมชัน 
                             <br> > บทความ
                         </li></ul>
                     </div>

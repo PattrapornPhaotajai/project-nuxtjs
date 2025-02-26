@@ -14,10 +14,10 @@
                 <p class=" bg-blue-100 w-20 h-7 text-center ml-10 rounded-lg"><a href="/home" > กลับ </a></p>
                 <div class=" bg-pink-200 h-80 w-80% m-12 rounded-lg ">
                     <p class=" text-xl ml-5 font-semibold">โปรโมชั่น</p> 
-                    <p class=" bg-gray-200 h-20 w-4/5 pl-3 ml-6 mt-8 mb-3 rounded-lg ">hjhkjhjkhjkhkjh </p>
-                    <p class=" ml-8 "><input type="checkbox">jhgkjdfh<input type="checkbox" class="ml-8">jjgklvhikhdjkxdtfh</p>
+                    <p class=" bg-gray-200 h-20 w-4/5 pl-3 ml-6 mt-8 mb-3 rounded-lg ">ไม่ต่อเล็บ  </p>
+                    <p class=" ml-8 "><input type="checkbox">ค่าถอด pvc  70฿<input type="checkbox" class="ml-8">ค่าล้างเล็บ 70฿</p>
                     <input type="date" class=" ml-8 mt-4"> 
-                    <p class=" bg-pink-500 w-20 h-7 text-center rounded-lg ml-auto mr-12"><a href="/day" > จองเลย </a></p>
+                    <p class=" bg-pink-300 w-20 h-7 text-center rounded-lg ml-auto mr-12"><a href="/confirm2" > จองเลย </a></p>
                 </div>
             </div>
             

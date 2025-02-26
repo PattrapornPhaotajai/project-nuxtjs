@@ -37,7 +37,7 @@
                             <ul class="p-3">
                                 <li class=" flex justify-center items-center"> <img src="/15.jpg" class="h-100% w-100%" alt=""></li>
                             </ul>
-                            <ul class=""><li class=" text-center pb-10 "><a href="">  เพิ่มเติม </a>
+                            <ul class=""><li class=" text-center pb-10 "><a href="/performance">  เพิ่มเติม </a>
                                 </li></ul>
                         </div>
                         

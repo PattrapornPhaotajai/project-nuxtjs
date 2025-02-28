@@ -6,15 +6,7 @@
                 <p class=" "> <a href="/home"> จองคิว  </a></p>
             </div>
             
-            <button @click="showOverlay"><i class="fa-regular fa-circle-user text-3xl mr-12"></i></button>
-            <div v-if="isOverlayVisible" class="absolute top-[100px] left-[80%] flex justify-center items-center z-10" @click="hideOverlay">
-            <div class="ovlc bg-gray-200 p-20 rounded-[0px] max-w-[300px] w-[100%] text-center" @click.stop>
-                <p class=" bg-pink-300 rounded-lg mb-2"><a href="">ตั้งค่า</a></p>
-                <p class=" bg-white rounded-lg mb-2"><a href="/recording" >ประวัติการจอง</a></p>
-                <p class=" bg-red-600 rounded-lg mb-2"> <a href=""> ออกจากระบบ</a></p>
-                <button @click="hideOverlay" class=" text-red-800">Close</button>
-            </div>
-            </div>
+           <a href="/login">เข้าสู่ระบบ</a>
         </div>
 </template>
 

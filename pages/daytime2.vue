@@ -18,6 +18,16 @@
                     <p class=" ml-8 "><input type="checkbox">ค่าถอด pvc  70฿<input type="checkbox" class="ml-8">ค่าล้างเล็บ 70฿</p>
                     <input type="date" class=" ml-8 mt-4"> 
                     <p class=" bg-pink-300 w-20 h-7 text-center rounded-lg ml-auto mr-12"><a href="/confirm2" > จองเลย </a></p>
+                    <p class="ml-8 pb-1 font-semibold">กรุณา เลือกเลา</p>
+                    <select  class="pl-3 border rounded mb-8 ml-8 w-60" >
+                        <option >10:00</option>
+                        <option >12:00</option>
+                        <option >14:00</option>
+                        <option >15:00</option>
+                        <option >17:00</option>
+                        <option >19:00</option>
+                        <option >20:00</option>
+                    </select>
                 </div>
             </div>
             

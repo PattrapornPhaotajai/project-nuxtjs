@@ -28,7 +28,7 @@ import 'swiper/css';
 
 
 const slides = [
-  { image: '1.png', alt: 'Slide 1' },
+  { image: '8.jpg', alt: 'Slide 1' },
   { image: '2.png', alt: 'Slide 2' },
   { image: '3.png', alt: 'Slide 3' },
 ];

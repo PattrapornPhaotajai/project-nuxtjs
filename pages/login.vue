@@ -38,10 +38,13 @@
                     class="w-full border border-black"
                     required>
                 </div>
-                <button type="submit" class="bg-black text-white w-20 h-10">Submit</button>
+                <div class="flex justify-between items-center">
+                    <button type="submit" class="bg-pink-400 rounded-[10px] w-20 h-10">Submit</button>
+                    <a href="/" class="bg-red-600 text-white w-20 h-10 flex justify-center items-center rounded-[10px]">Cancel</a>
+                </div>
+                
             </form>
-            <div>ffffff</div>
-            <div>sgdrsg</div>
+              
         </div>
     </div>
 </template>

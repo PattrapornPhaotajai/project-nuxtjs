@@ -10,13 +10,12 @@
                     <p>ให้คะแนนการบริการ:</p>
                     <div>
                         <i v-for="(star, index) in 5" :key="index"
-                        @click="toggleRating(index + 1)"
+                        @click="adjustRating(index + 1)"
                         :class="{'fa-solid fa-star text-yellow-500': index < rating, 'fa-regular fa-star text-gray-400': index >= rating}"
                         class="cursor-pointer text-2xl">
                         </i>
                     </div>
                 </div>
-                
                 <p class="text-lg mt-4">เขียนรีวิว</p>
                 <input type="text" class="bg-pink-100 w-4/5 h-24 mb-20 rounded-lg">
                 <div class="grid grid-cols-2">
@@ -43,7 +42,11 @@ import Overlay from "~/components/Overlaycancel.vue";
 const showOverlay = ref(false);
 const rating = ref(0);
 
-const toggleRating = (value) => {
-    rating.value = rating.value === value ? 0 : value;
+const adjustRating = (value) => {
+    if (rating.value === value) {
+        rating.value -= 1; // กดซ้ำแล้วลดทีละ 1 ดาว
+    } else {
+        rating.value = value;
+    }
 };
 </script>

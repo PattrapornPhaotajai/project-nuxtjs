@@ -29,7 +29,6 @@
         </div>
         <a href="/login" class=""><h1 class="bg-pink-300 h-10 w-24 flex justify-center items-center rounded-[10px] mt-5">Go to Login</h1></a>
       </form>
-      <h1>ffff</h1>
     </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen flex flex-col justify-center items-center gap-6 py-10 bg-gray-100">
-      <img src="/6.png" alt="Logo" class="w-[300px] h-[300px]" />
+      <img src="/6.png" alt="Logo" class="w-[310px] h-[300px]" />
       <form class="bg-white p-6 rounded-lg shadow-md w-[400px] space-y-4">
         <div>
           <label class="block text-sm font-medium text-gray-700">Phone Number:</label>

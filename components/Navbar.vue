@@ -8,12 +8,33 @@
 
     <div class="mr-6">
       <template v-if="isLoggedIn">
-        <NuxtLink to="/profile">โปรไฟล์ของฉัน</NuxtLink>
-        <button @click="logout" class="ml-4 text-red-500">ออกจากระบบ</button>
+        <button @click="openProfile" class="text-white">โปรไฟล์ของฉัน</button>
       </template>
       <template v-else>
         <NuxtLink to="/login">เข้าสู่ระบบ</NuxtLink>
       </template>
+    </div>
+
+    <!-- ✅ Profile Overlay (กดตรงไหนก็ปิดได้) -->
+    <div 
+      v-if="showProfile" 
+      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+      @click.self="closeProfile"
+    >
+      <div class="bg-white p-6 rounded-lg shadow-lg w-[400px] relative">
+        <h2 class="text-xl font-bold">โปรไฟล์ของฉัน</h2>
+
+        <!-- 🛠️ ใส่เนื้อหาของ Overlay ได้ที่นี่ -->
+        <slot></slot>
+
+        <!-- ✅ ปุ่ม Logout ใน Overlay -->
+        <button @click="logout" class="mt-4 bg-red-500 text-white px-4 py-2 rounded-md w-full">
+          ออกจากระบบ
+        </button>
+
+        <!-- ✅ ปุ่มปิด Overlay -->
+        <button @click="closeProfile" class="absolute top-2 right-2 text-gray-600 text-xl">×</button>
+      </div>
     </div>
   </div>
 </template>
@@ -22,18 +43,25 @@
 export default {
   data() {
     return {
-      isLoggedIn: false
+      isLoggedIn: false,
+      showProfile: false
     };
   },
   mounted() {
-    // ตรวจสอบว่ามีข้อมูลผู้ใช้ใน localStorage หรือไม่
-    this.isLoggedIn = localStorage.getItem('user') ? true : false;
+    this.isLoggedIn = !!localStorage.getItem('user'); // เช็คว่ามีข้อมูล user ใน localStorage หรือไม่
   },
   methods: {
+    openProfile() {
+      this.showProfile = true;
+    },
+    closeProfile() {
+      this.showProfile = false;
+    },
     logout() {
-      localStorage.removeItem('user'); // ลบข้อมูลล็อกอิน
+      localStorage.removeItem('user'); // ลบข้อมูลผู้ใช้
       this.isLoggedIn = false;
-      this.$router.push('/login'); // กลับไปหน้า Login
+      this.showProfile = false;
+      window.location.reload(); // รีเฟรชหน้าเพื่อให้ Navbar อัปเดตเป็น "เข้าสู่ระบบ"
     }
   }
 };

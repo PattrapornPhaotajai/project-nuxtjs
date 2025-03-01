@@ -92,10 +92,25 @@
                                 <br> บริการดีมาก </li>
                         </ul>
                         <ul>
-                            <li class=" text-xl font-normal pl-3  pt-6 pb-2 mt-2 "><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li>
-                            <li class=" text-xl font-normal pl-3  pt-6 pb-2 mt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li>   
+                            <li class=" text-xl font-normal pl-3  pt-6 pb-2 mt-2 ">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
+                            </li>
+                            <li class=" text-xl font-normal pl-3  pt-6 pb-2 mt-2">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #c7c7c7;"></i>
+                            </li>   
+                        
                         </ul>
+                        
                     </div>
+                    <a href="/homereview" class="pb-5 text-xl pl-2 pt-1">เพิ่มเติม</a>
                 </div>
             </section>
             

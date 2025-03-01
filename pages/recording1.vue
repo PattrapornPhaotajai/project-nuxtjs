@@ -5,8 +5,8 @@
             <div class=" mt-12 ml-8 text-2xl font-semibold"> ประวัติการจองคิว</div>
             <div class=" text-center  grid grid-cols-3 mt-12">
                 <a href="" class=" bg-pink-300  rounded-lg  pt-1.5  ml-12">กำลังรอคิว</a>
-                <a href="/recordend1" class=" bg-pink-200  rounded-lg  pt-1.5  ml-12"> เสร็จสิ้น </a>
-                <a href="/recordcancel1" class=" bg-pink-200  rounded-lg  pt-1.5  ml-12">คิวถูกยกเลิก</a>
+                <a href="/recordend" class=" bg-pink-200  rounded-lg  pt-1.5  ml-12"> เสร็จสิ้น </a>
+                <a href="/recordcancel" class=" bg-pink-200  rounded-lg  pt-1.5  ml-12">คิวถูกยกเลิก</a>
             </div>
             <div class=" bg-pink-200 h-52 w-80% mt-12 rounded-lg flex m-12">
                     <img src="/13.jpg" class=" p-6" >
@@ -22,9 +22,9 @@
                     <p class=" font-semibold text-red-500 text-right mt-36"> 100฿</p>
                 </div>
                 <div class=" grid grid-cols-2 ">
-                        <p class=" bg-blue-100 w-2/5 h-7 place-self-center text-center font-bold rounded-md mb-20"><a href="/recordcancel1" > ยกเลิก </a></p>
-                        <p class=" bg-pink-300 w-2/5 h-7 place-self-center text-center font-bold rounded-md mb-20"><a href="/recordend1" > ยืนยัน </a></p>
-                    </div>
+                    <a href="/recordcancel1" > <p class=" bg-blue-100 w-32 h-7 place-self-center text-center font-bold rounded-md mb-20"> ยกเลิก </p></a>
+                    <a href="/recordend1" ><p class=" bg-pink-300 w-32 h-7 place-self-center text-center font-bold rounded-md mb-20"> ยืนยัน </p></a>
+                </div>
         </main>
         <div class=" mt-12">
         <footter/>

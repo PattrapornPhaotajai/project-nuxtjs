@@ -22,9 +22,9 @@
                     <p class=" font-semibold text-red-500 text-right mt-36"> 100฿</p>
                 </div>
                 <div class=" grid grid-cols-2 ">
-                        <p class=" bg-blue-100 w-2/5 h-7 place-self-center text-center font-bold rounded-md mb-20"><a href="/recorcancel2" > ยกเลิก </a></p>
-                        <p class=" bg-pink-300 w-2/5 h-7 place-self-center text-center font-bold rounded-md mb-20"><a href="/recordend2" > ยืนยัน </a></p>
-                    </div>
+                    <a href="/recordcancel2" > <p class=" bg-blue-100 w-32 h-7 place-self-center text-center font-bold rounded-md mb-20"> ยกเลิก </p></a>
+                    <a href="/recordend2" ><p class=" bg-pink-300 w-32 h-7 place-self-center text-center font-bold rounded-md mb-20"> ยืนยัน </p></a>
+                </div>
         </main>
         <div class=" mt-12">
         <footter/>

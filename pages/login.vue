@@ -2,7 +2,7 @@
     <div class="min-h-screen">
       <div class="bg-cover bg-center h-[365px] flex justify-center items-center" style="background-image: url('/Rectangle 4.png');">
           <div>
-              <img src="/llgg.png" alt="Logo">
+              <img src="/ggll.png" alt="Logo">
           </div>
       </div>
       <div class="flex flex-col justify-center items-center">
@@ -21,7 +21,7 @@
               </div>
               <div class="flex flex-col justify-center items-center gap-4">
                   <button type="submit" @click.prevent="login" class="px-3 py-1 rounded-md">
-                      <img src="/Component 38.png" alt="Login Button">
+                      <img src="/inn.png" alt="Login Button">
                   </button>
                   <NuxtLink to="/signin" class="text-sm">
                       <div class="flex flex-col justify-center items-center">

@@ -1,50 +1,56 @@
 <template>
-    <div class="min-h-screen">
-        <div class="flex flex-col justify-center items-center py-5 gap-10">
-            <img src="/1.png" alt="">
-            <form class="flex flex-col gap-10">
-                <div>
-                    <label>Name:</label>
-                    <input 
-                    type="text"
-                    class="w-full border border-black"
-                    required>
-                </div>
-                <div>
-                    <label>Phone Number:</label>
-                    <input 
-                    type="text"
-                    class="w-full border border-black"
-                    required>
-                </div>
-                <div>
-                    <label>OTP Number:</label>
-                    <input 
-                    type="text"
-                    class="w-full border border-black"
-                    required>
-                </div>
-                <div>
-                    <label>Password:</label>
-                    <input 
-                    type="text"
-                    class="w-full border border-black"
-                    required>
-                </div>
-                <div>
-                    <label>Confirm Password:</label>
-                    <input 
-                    type="text"
-                    class="w-full border border-black"
-                    required>
-                </div>
-                <div class="flex justify-between items-center">
-                    <button type="submit" class="bg-pink-400 rounded-[10px] w-20 h-10">Submit</button>
-                    <a href="/" class="bg-red-600 text-white w-20 h-10 flex justify-center items-center rounded-[10px]">Cancel</a>
-                </div>
-                
-            </form>
-              
+  <div class="min-h-screen">
+    <div class="bg-cover bg-center h-[365px] flex justify-center items-center" style="background-image: url('/Rectangle 4.png');">
+        <div>
+            <img src="/llgg.png" alt="">
         </div>
     </div>
+    <div class="flex flex-col justify-center items-center">
+        <h1 class="text-4xl font-bold mt-8">เข้าสู่ระบบสมาชิก</h1>
+        <form class="bg-white p-6 rounded-lg shadow-md w-[650px] space-y-4 mt-6">
+            <div>
+                <label class="text-sm font-medium text-gray-700">Phone Number:</label>
+                <input v-model="phoneNumber" type="text" class="w-full border border-gray-300 rounded-full p-2 mt-1 focus:ring focus:ring-blue-300" required />
+            </div>
+            <div>
+                <label class="text-sm font-medium text-gray-700">Password:</label>
+                <input v-model="password" type="password" class="w-full border border-gray-300 rounded-full p-2 mt-1 focus:ring focus:ring-pink-300" required />
+            </div>
+            <div class="mt-4 flex text-center justify-end ">
+                <a href="/resetpassword" class="text-sm">ลืมรหัสผ่าน</a>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-4">
+                <button type="submit" @click.prevent="login" class="px-3 py-1 rounded-md">
+                    <img src="/Component 38.png" alt="">
+                </button>
+                <NuxtLink to="/signin" class="text-sm">
+                    <div class="flex flex-col justify-center items-center">
+                        <h1>ยังไม่มีบัญชี?</h1>
+                        <h1 class="text-xl">สมัครสมาชิก</h1>
+                    </div>
+                </NuxtLink>
+            </div>
+        </form>
+    </div>
+  </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      phoneNumber: '',
+      password: ''
+    };
+  },
+  methods: {
+    login() {
+      // Logic for login (you can add your actual login logic here)
+      console.log('Logging in with:', this.phoneNumber, this.password);
+      
+      // เมื่อการล็อกอินสำเร็จแล้ว ให้เปลี่ยนหน้าไปที่ '/home'
+      this.$router.push('/');
+    }
+  }
+}
+</script>

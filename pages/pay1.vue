@@ -8,17 +8,18 @@
                 <p class="justify-self-center bg-pink-300 h-12 w-12 rounded-full  pt-3">3</p>
             </div>
             <div class=" bg-pink-200 h-52 w-80% mt-12 rounded-lg flex m-12">
-                    <img src="/25.jpg" class=" p-6" >
+                    <img src="/13.jpg" class=" p-6" >
                     <ul class="m-5">
-                        <li class=" font-bold">โปรโมชัน</li>
-                        <li>ต่อเล็บ</li>
+                        <li> โปรต่อเล็บ
+                            <br>ราคา 299 บาท
+                            <br>ทาสี+เพ้นเล็บ+ ใส่อะไหล่ได้ไม่อั้น</li>
                         <li><i class="fa-regular fa-calendar-days pr-3"></i>xx/xx/xxxx</li>
                         <li><i class="fa-regular fa-clock pr-3"></i>00:00</li>
-                        <li><i class="fa-regular fa-user pr-3"></i>1 คิว</li>
+                        <li><i class="fa-regular fa-user pr-3"></i>1คิว</li>
                         <li> ค่าจอง</li>
 
                     </ul>
-                    <p class=" font-semibold text-red-500 ml-14 mt-36"> 100฿</p>
+                    <p class=" font-semibold text-red-500 ml-auto mr-6 mb-4 mt-auto"> 299฿</p>
 
                 
                 </div>
@@ -31,10 +32,15 @@
                     </p>
                     <p class=" text-center font-black mt-6"> หลักฐานการชำระเงิน
                         <br><input type="file"></p>
-                    <div class=" grid grid-cols-2">
-                        <p class=" bg-blue-100 w-2/5 h-7 place-self-center text-center mt-5 font-bold rounded-md"><a href="/home" > ยกเลิก </a></p>
-                        <p class=" bg-pink-300 w-2/5 h-7 place-self-center text-center mt-5 font-bold rounded-md"><a href="/recording1" > ยืนยัน </a></p>
-                    </div>
+                        <div class=" grid grid-cols-2 ">
+                        <a href="/" > <p class=" bg-blue-100 w-32 h-7 place-self-center text-center font-bold rounded-md mb-20"> ยกเลิก </p></a>
+                        <button @click="showOverlay = true"><p class=" bg-pink-300 w-32 h-7 place-self-center text-center font-bold rounded-md mb-20"> ยืนยัน </p>
+                        </button>
+                    <Overlay :show="showOverlay" @pay1="showOverlay = false">
+                        <h2 class="text-lg font-semibold">ยืนยันข้อมูล</h2>
+                       
+                    </Overlay>
+                </div>
                     
                     
                 </div>
@@ -42,3 +48,9 @@
     <footter/>
     </div>
 </template>
+<script setup>
+import { ref } from "vue";
+import Overlay from "~/components/Overlaypay1.vue";
+
+const showOverlay = ref(false);
+</script>

@@ -11,14 +11,14 @@
                 <p class="justify-self-center bg-gray-300 h-12 w-12 rounded-full  pt-3">3</p>
             </div>
             <div> 
-                <p class=" bg-blue-100 w-20 h-7 text-center ml-10 rounded-lg"><a href="/home" > กลับ </a></p>
-                <div class=" bg-pink-200 h-80 w-80% m-12 rounded-lg ">
+                <p class="shadow-xl bg-blue-200 w-20 h-7 text-center ml-10 rounded-lg"><a href="/home" > กลับ </a></p>
+                <div class="shadow-lg bg-purple-100 h-80 w-80% m-12 rounded-lg ">
                     <p class=" text-xl ml-5 font-semibold"> โปรไม่ต่อเล็บ </p>
-                    <p class=" bg-gray-200 h-20 w-4/5 pl-3 ml-6 mt-8 mb-3 rounded-lg ">ราคา 189 บาท
+                    <p class=" bg-white  h-20 w-4/5 pl-3 ml-6 mt-8 mb-3 rounded-lg ">ราคา 189 บาท
                         <br>ทาสี+เพ้นเล็บ+ ใส่อะไหล่ได้ไม่อั้น </p>
                     <p class=" ml-8 "><input type="checkbox">ค่าถอด pvc  70฿<input type="checkbox" class="ml-8">ค่าล้างเล็บ 70฿</p>
                     <input type="date" class=" ml-8 mt-4"> 
-                    <p class=" bg-pink-300 w-20 h-7 text-center rounded-lg ml-auto mr-12"><a href="/confirm2" > จองเลย </a></p>
+                    <p class="shadow-xl bg-pink-300 w-20 h-7 text-center rounded-lg ml-auto mr-12"><a href="/confirm2" > จองเลย </a></p>
                     <p class="ml-8 pb-1 font-semibold">กรุณา เลือกเลา</p>
                     <select  class="pl-3 border rounded mb-8 ml-8 w-60" >
                         <option >10:00</option>

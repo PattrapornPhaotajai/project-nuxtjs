@@ -7,14 +7,14 @@
             <div >
                 <div>
                     <ul>
-                        <li class=" flex justify-center items-center mt-6"><img src="/8.jpg" class=" h-100% w-100% "  alt=""></li>
+                        <li class=" flex justify-center items-center mt-6 shadow-md"><img src="/8.jpg" class=" h-100% w-100% "  alt=""></li>
                     </ul>
-                    <p class=" bg-blue-100 w-20 h-7 place-self-center mt-5 rounded-lg"><a href="/home" > จองคิว </a></p>
+                    <p class=" bg-blue-200 shadow-xl w-20 h-7 place-self-center mt-5 rounded-lg"><a href="/home" > จองคิว </a></p>
                 </div>
                 <div class=" text-4xl font-bold mt-4"><h2> โปรโมชัน </h2>
                     <ul>
-                        <li class=" flex justify-center items-center mt-2"><img src="/4.png" class=" h-100% w-100% "  alt=""></li>  
-                        <li class=" flex justify-center items-center mt-2"><img src="/5.png" class=" h-100% w-100% "  alt=""></li>  
+                        <li class=" flex justify-center items-center mt-2 shadow-md"><img src="/4.png" class=" h-100% w-100% "  alt=""></li>  
+                        <li class=" flex justify-center items-center mt-2 shadow-md"><img src="/5.png" class=" h-100% w-100% "  alt=""></li>  
                     </ul> 
                 </div>
             </div>
@@ -22,7 +22,7 @@
           <section class="mt-8 ">
             <h2 class=" text-3xl font-bold text-black-500 pl-8"> ผลงาน </h2>
                 <div class="mt-6 ">
-                    <div  class="bg-white rounded-3xl grid grid-cols-3">
+                    <div  class="bg-white rounded-3xl grid grid-cols-3 shadow-lg">
                         <div>
                             <ul class="pl-3  pt-3">
                                 <li class=" flex justify-center items-center"> <img src="/18.jpg" class="h-100% w-100%" alt=""></li>
@@ -47,7 +47,7 @@
             <section class="mt-8 ">
                 <h2 class=" text-3xl font-bold text-black-500 pl-8"> บทความน่าสนใจ เกี่ยวกับการทำเล็บ </h2>
                 <div class="mt-6 ">
-                    <div  class="bg-white rounded-3xl grid grid-cols-2">
+                    <div  class="bg-white rounded-3xl grid grid-cols-2 shadow-lg">
                         <div>
                             <h2 class=" pt-5 font-semibold">ไอเดียลายเล็บตรุษจีน 2566 สีแดงเด่นรับทรัพย์</h2>
                             <ul class="pl-3  pt-3 pr-3">
@@ -86,14 +86,14 @@
                 <div class="text-3xl font-bold text-left ml-10 mt-4"><h2> รีวิวจากลูกค้า </h2>
                     <div class=" grid grid-cols-3">
                         <ul >
-                            <li class=" text-xl font-normal pl-3 bg-pink-200 rounded-2xl pt-2 mt-2"> คุญไอซ์ :
+                            <li class=" text-xl font-normal pl-3 shadow-lg bg-purple-200 rounded-2xl pt-2 mt-2"> คุญไอซ์ :
                                 <br> บริการดีมาก </li>
-                            <li class=" text-xl font-normal pl-3 bg-pink-200 rounded-2xl pt-2 mt-2"> คุญไอซ์ :
+                            <li class=" text-xl font-normal pl-3 shadow-lg bg-purple-200 rounded-2xl pt-2 mt-2"> คุญไอซ์ :
                                 <br> บริการดีมาก </li>
                         </ul>
                         <ul>
                             <li class=" text-xl font-normal pl-3  pt-6 pb-2 mt-2 ">
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star " style="color: #FFD43B;"></i>
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>

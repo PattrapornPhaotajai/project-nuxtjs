@@ -3,10 +3,10 @@
         <adminnavbar/>
         <main class=" mx-auto mt-7 text-center">
             <div class="bg-pink-300 h-14 rounded-lg text-center p-4 m-4 grid grid-cols-4">
-                <a href="" >การจองคิว</a> 
+                <a href="/adminqueue" >การจองคิว</a> 
                 <a href="" class=" bg-white rounded-lg">บริการ&ราคา</a> 
-                <a href="">รีวิวลูกค้า</a>
-                <a href="">ยกเลิก&คืนเงิน</a>   
+                <a href="/adminreview">รีวิวลูกค้า</a>
+                <a href="/admincancel">ยกเลิก&คืนเงิน</a>   
             </div>
             <div>
                 <p class="text-left ml-32 ">ชื่อบริการ (เช่น โปรต่อเล็บ)</p>

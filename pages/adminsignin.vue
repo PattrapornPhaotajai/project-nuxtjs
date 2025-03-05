@@ -31,7 +31,7 @@
           <button type="submit" class=""><img src="/st.png" alt="" class="w-52 h-10"></button>
           <NuxtLink to="/login" class=""><img src="/dd (2).png" alt="" class="w-52 h-10"></NuxtLink>
         </div>
-        <a href="/login" class=""><h1 class="bg-pink-300 h-10 w-24 flex justify-center items-center rounded-[10px] mt-5">Go to Login</h1></a>
+        <a href="/adminlogin" class=""><h1 class="bg-pink-300 h-10 w-24 flex justify-center items-center rounded-[10px] mt-5">Go to Login</h1></a>
       </form>
     </div>
   </template>

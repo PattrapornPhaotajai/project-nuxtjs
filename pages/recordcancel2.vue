@@ -8,7 +8,7 @@
                <a href="/recordend" class=" bg-pink-200  rounded-lg  pt-1.5  ml-12"> เสร็จสิ้น </a>
                <a href="/recordcancel2" class=" bg-pink-300  rounded-lg  pt-1.5  ml-12">คิวถูกยกเลิก</a>
            </div>
-           <div class=" bg-pink-200 h-52 w-80% mt-12 rounded-lg flex m-12">
+           <div class="shadow-lgbg-purple-100 h-52 w-80% mt-12 rounded-lg flex m-12">
                    <img src="/25.jpg" class=" p-6" >
                    <ul class="m-5">
                        <li class=" font-bold">โปรโมชั้น</li>
@@ -19,7 +19,7 @@
                        <li> ค่าจอง</li>
 
                    </ul>
-                   <p class=" font-semibold text-red-500 text-right mt-36"> 100฿</p>
+                   <p class=" font-semibold text-red-500 text-right mt-36"> 189฿</p>
                </div>
                <div class="p-2">
                 <p class=" text-center p-3 text-2xl ">คำขอคืนเงิน</p>
@@ -37,8 +37,8 @@
                         <p>กรุณากรอกเลขบัญชี</p><input type=" password">
                     </div>
                     <div class=" grid grid-cols-2 ">
-                        <a href="" > <p class=" bg-blue-100 w-32 h-7 place-self-center text-center font-bold rounded-md mb-20"> ยกเลิก </p></a>
-                        <button @click="showOverlay = true"><p class=" bg-pink-300 w-32 h-7 place-self-center text-center font-bold rounded-md mb-20"> ยืนยัน </p>
+                        <a href="" > <p class=" bg-blue-200 shadow-xl w-32 h-7 place-self-center text-center font-bold rounded-md mb-20"> ยกเลิก </p></a>
+                        <button @click="showOverlay = true"><p class=" bg-pink-300 shadow-xl w-32 h-7 place-self-center text-center font-bold rounded-md mb-20"> ยืนยัน </p>
                         </button>
                     <Overlay :show="showOverlay" @correct="showOverlay = false">
                         <h2 class="text-lg font-semibold">ยืนยันข้อมูล</h2>

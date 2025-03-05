@@ -3,9 +3,9 @@
         <adminnavbar/>
         <main class=" mx-auto mt-7 text-center">
             <div class="bg-pink-300 h-14 rounded-lg text-center p-4 m-4 grid grid-cols-4">
-                <a href="" >การจองคิว</a> 
-                <a href="">บริการ&ราคา</a> 
-                <a href="">รีวิวลูกค้า</a>
+                <a href="/adminqueue" >การจองคิว</a> 
+                <a href="adminserve">บริการ&ราคา</a> 
+                <a href="/adminreview">รีวิวลูกค้า</a>
                 <a href="" class=" bg-white rounded-lg">ยกเลิก&คืนเงิน</a>   
             </div>
             <div class="text-center bg-pink-200 grid grid-cols-5 ml-6 mt-6 mr-6 rounded-t-lg">

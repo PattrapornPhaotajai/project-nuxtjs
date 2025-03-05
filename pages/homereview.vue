@@ -9,9 +9,9 @@
                 <div class="text-3xl mb-60 font-bold text-left ml-10 mt-4">
                     <div class=" grid grid-cols-3">
                         <ul >
-                            <li class=" text-xl font-normal pl-3 bg-pink-200 rounded-2xl pt-2 mt-2"> คุญไอซ์ :
+                            <li class=" text-xl font-normal pl-3 bg-purple-100 rounded-2xl pt-2 mt-2"> คุญไอซ์ :
                                 <br> บริการดีมาก </li>
-                            <li class=" text-xl font-normal pl-3 bg-pink-200 rounded-2xl pt-2 mt-2"> คุญไอซ์ :
+                            <li class=" text-xl font-normal pl-3 bg-purple-100 rounded-2xl pt-2 mt-2"> คุญไอซ์ :
                                 <br> บริการดีมาก </li>
                         </ul>
                         <ul>

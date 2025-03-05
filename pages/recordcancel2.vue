@@ -8,7 +8,7 @@
                <a href="/recordend" class=" bg-pink-200  rounded-lg  pt-1.5  ml-12"> เสร็จสิ้น </a>
                <a href="/recordcancel2" class=" bg-pink-300  rounded-lg  pt-1.5  ml-12">คิวถูกยกเลิก</a>
            </div>
-           <div class="shadow-lgbg-purple-100 h-52 w-80% mt-12 rounded-lg flex m-12">
+           <div class="shadow-lg bg-purple-100 h-52 w-80% mt-12 rounded-lg flex m-12">
                    <img src="/25.jpg" class=" p-6" >
                    <ul class="m-5">
                        <li class=" font-bold">โปรโมชั้น</li>
